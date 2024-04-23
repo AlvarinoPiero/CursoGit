@@ -21,6 +21,7 @@ SELECT @@new_statement_id = (SELECT MAX(sql_statement_id) FROM common_sql_statem
 SELECT @@new_batch        = (SELECT MAX(batch)            FROM common_sql_statements);
 SELECT @@new_sequence     = (SELECT MAX(sequence_number)  FROM common_sql_statements);
 
+--ESTA ES UNA PRUEBA DE CAMBIOS
 
 IF (select COUNT(COLUMN_NAME) FROM INFORMATION_SCHEMA.COLUMNS AS c1
 where c1.column_name IN ('Depth_To','Depth_From')
